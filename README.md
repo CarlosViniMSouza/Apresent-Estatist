@@ -4,4 +4,4 @@
 
 2 - [SCATTER PLOT in R programming](https://r-coder.com/scatter-plot-r/)
 
-3 - [Apresentation]()
+3 - [Apresentação](https://github.com/CarlosViniMSouza/Apresent-Estatist/blob/main/docs/material-apresentacao.pdf)
