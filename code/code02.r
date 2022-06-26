@@ -1,9 +1,8 @@
 # Scatter Plot in R
 
-# Considere o modelo 'Y = 2 + 3X^2 + ε', sendo 'Y' a variável dependente, 'X' a variável independente e 'ε' um termo de erro, tal que 'X∼U(0, 1)' e 'ε∼N(0, 0.25)'. # nolint
-
-# para salvarmos nosso gráfico de dispersão.
-# jpeg("myplot.jpeg", width = 4, height = 4, units = "in", res = 300) # nolint
+# Considere o modelo 'Y = 2 + 3X^2 + ε', sendo 'Y' a variável dependente,
+# 'X' a variável independente e 'ε' um termo de erro,
+# tal que 'X∼U(0, 1)' e 'ε∼N(0, 0.25)'.
 
 set.seed(12)
 
@@ -20,7 +19,11 @@ plot(x, y, pch = 19, col = "gray52")
 
 # Gráfico de dispersão em R com cores diferentes #
 
-# Se você tem uma variável que categoriza os pontos de dados em alguns grupos, você pode defini-la como parâmetro do argumento 'col' para plotar os pontos de dados 'com cores diferentes', dependendo do seu grupo, ou até mesmo definir símbolos diferentes por grupo. # nolint
+# Se você tem uma variável que categoriza os pontos de dados em
+# alguns grupos, você pode defini-la como parâmetro do argumento
+# 'col' para plotar os pontos de dados 'com cores diferentes',
+# dependendo do seu grupo, ou até mesmo definir símbolos
+# diferentes por grupo. # nolint
 
 group <- as.factor(ifelse(x < 0.5, "Group 1", "Group 2"))
 
@@ -47,7 +50,10 @@ legend("topleft",
   lwd = 3, lty = c(2, 1, 1), col = c("red", "orange", "blue")
 )
 
-# Além disso, você pode adicionar a "correlação de Pearson" entre as variáveis ​​que você pode calcular com a função 'cor'. Então, você pode colocar a saída em algumas coordenadas do gráfico com a função 'text'. # nolint
+# Além disso, você pode adicionar a "correlação de Pearson"
+# entre as variáveis ​​que você pode calcular com a função
+# 'cor'. # Então, você pode colocar a saída em algumas
+# coordenadas do gráfico com a função 'text'. # nolint
 
 # Calcule correlação
 correlacao <- cor(x, y)
@@ -56,5 +62,3 @@ correlacao <- cor(x, y)
 plot(x, y, pch = 19)
 
 text(paste("Correlation:", round(correlacao, 2)), x = 0.2, y = 4.5)
-
-# Adicionar várias séries ao gráfico de dispersão R #
