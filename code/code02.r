@@ -55,6 +55,8 @@ legend("topleft",
 # 'cor'. # Então, você pode colocar a saída em algumas
 # coordenadas do gráfico com a função 'text'. # nolint
 
+jpeg("resultado04.jpeg")
+
 # Calcule correlação
 correlacao <- cor(x, y)
 
@@ -62,3 +64,5 @@ correlacao <- cor(x, y)
 plot(x, y, pch = 19)
 
 text(paste("Correlation:", round(correlacao, 2)), x = 0.2, y = 4.5)
+
+dev.off()
