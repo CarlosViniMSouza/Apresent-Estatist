@@ -1,4 +1,4 @@
 git add -A
-git commit -m "image folder -> resultados add"
+git commit -m "apresentacao-powerpoint.pdf -> add"
 git push
 exit
